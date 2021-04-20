@@ -1,0 +1,189 @@
+﻿<Window x:Class="GestionMines.Permis_Recherche"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionMines"
+        mc:Ignorable="d"
+        Title="Permis_Recherche" Height="450" Width="800">
+    <ScrollViewer >
+
+        <StackPanel Height="Auto">
+            <!--Les informations de Demande-->
+            <Grid Height="420">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Rectangle Grid.Column="0" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="1" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="2" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="3" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="4" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="5" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="6" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="7" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="8" Fill="#37B7FF"/>
+                <TextBlock Grid.ColumnSpan="3" TextAlignment="Center"
+                       FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="#fff" Margin="0,15,0,0"
+                       Grid.Column="3" Grid.Row="0">
+            Les informations de Demande</TextBlock>
+                <TextBlock
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="  10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="1">
+            Date Dépot</TextBlock>
+                <DatePicker Grid.ColumnSpan="2"
+                       Grid.Column="2" Grid.Row="1" Height="30" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="4" Grid.Row="1">
+            Numéro Demande</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="6" Grid.Row="1" Height="30" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="2">
+            Nom Demandeur</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="2" Grid.Row="2" Height="30" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="4" Grid.Row="2">
+            Status Demandeur</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="6" Grid.Row="2" Height="30" BorderThickness="1"/>
+                <!--line 3-->
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="3">
+            Abscisse</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="2" Grid.Row="3" Height="30" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="4" Grid.Row="3">
+            Ordonné</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="6" Grid.Row="3" Height="30" BorderThickness="1"/>
+                <!--line 4-->
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="4">
+            Point pévot</TextBlock>
+                <ComboBox Grid.ColumnSpan="2"
+                       Grid.Column="2" Grid.Row="4" Height="30" BorderThickness="1"/>
+
+            </Grid>
+            <!-- Les informations de Titulaire -->
+            <Grid  Height="420">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Rectangle Grid.Column="0" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="1" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="2" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="3" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="4" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="5" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="6" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="7" Fill="#37B7FF"/>
+                <Rectangle Grid.Column="8" Fill="#37B7FF"/>
+                <TextBlock Grid.ColumnSpan="3" TextAlignment="Center"
+                       FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="#fff" Margin="0,15,0,0"
+                       Grid.Column="3" Grid.Row="0">
+                  Les informations de Titulaire</TextBlock>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="1">
+                Raison Social</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="2" Grid.Row="1" Height="30" BorderBrush="Black" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="4" Grid.Row="1">
+                  Nom Société</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="6" Grid.Row="1" Height="30" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="2">
+            Numéro CNSS</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="2" Grid.Row="2" Height="30" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="4" Grid.Row="2">
+            Domicile de Demandeur</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="6" Grid.Row="2" Height="30" BorderThickness="1"/>
+                <!--line 3-->
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="3">
+            Registre de Commerce</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="2" Grid.Row="3" Height="30" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="4" Grid.Row="3">
+            Taxe Prof</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="6" Grid.Row="3" Height="30" BorderThickness="1"/>
+                <!--line 4-->
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="4">
+            Nom Site</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="2" Grid.Row="4" Height="30" BorderThickness="1"/>
+                <TextBlock 
+                       FontFamily="Arial" FontSize="14"  Height="30"  Margin="10,5,0,0" Grid.ColumnSpan="2"
+                       Grid.Column="4" Grid.Row="4">
+            Effective</TextBlock>
+                <TextBox Grid.ColumnSpan="2"
+                       Grid.Column="6" Grid.Row="4" Height="30" BorderThickness="1"/>
+                <!--line 4-->
+                <Button Content="Générer le bon d'achat" Grid.ColumnSpan="3"
+                       Grid.Column="0" Grid.Row="5" Height="30" BorderThickness="1" Background="#4EDFF3" Foreground="White"
+                        Margin="10,0,0,0"/>
+                <Button Content="Générer le bulltain de versement" Grid.ColumnSpan="3"
+                       Grid.Column="3" Grid.Row="5" Height="30"   BorderThickness="1" Background="#4EDFF3" Foreground="White"
+                        Margin="10,0,0,0" />
+
+            </Grid>
+        </StackPanel>
+
+
+
+    </ScrollViewer>
+</Window>
